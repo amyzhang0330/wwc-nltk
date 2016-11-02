@@ -4,5 +4,4 @@
 env
 
 # Non-shared PyCharm files
-.idea/workspace.xml
-.idea/misc.xml
+.idea/*

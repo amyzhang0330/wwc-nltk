@@ -3,9 +3,15 @@
 # Imperative: "throw the ball"
 Sentence[] -> VerbPhrase
 Sentence[] -> NounPhrase VerbPhrase
+Sentence[] -> Determiner NounPhrase
+Sentence[] -> NounPhrase
 
 NounPhrase -> Determiner Noun
 NounPhrase -> Determiner Adjective Noun
+NounPhrase -> Adjective Noun
+NounPhrase -> Adjective NounPhrase
+NounPhrase -> Noun Noun
+NounPhrase -> NounPhrase Noun
 
 # Intransitive: "... ran"
 VerbPhrase -> Verb
